@@ -1,0 +1,34 @@
+/* Ruimte voor beeld, gesprek en de vier stappen op één digibord. */
+body{background:radial-gradient(ellipse at 40% 0%,#fffdf7 0%,#f3f2e8 75%)}
+header{height:58px;padding:0 24px;border-bottom:1px solid #dae3d9}
+.brand{font-size:20px}
+#fullscreen,.back,.nav button{font-size:14px;padding:10px 16px;min-height:42px;border-radius:12px}
+main{max-width:none;padding:16px 24px 8px}
+footer{padding:8px;font-size:12px}
+.topline{margin-bottom:14px;gap:18px;min-height:42px}
+.topline h1{font-size:clamp(23px,2vw,32px);font-weight:600;letter-spacing:-.6px}
+.restart{margin:0 0 0 auto;padding:10px 12px;font-size:13px;white-space:nowrap;text-decoration:none;color:#536d67}
+.lesson{gap:24px;align-items:center;min-height:0}
+.lesson.with-example{grid-template-columns:minmax(0,.85fr) minmax(0,1.13fr) minmax(0,1fr)}
+.lesson.steps-only{grid-template-columns:minmax(0,1fr) minmax(0,1fr);max-width:1200px;margin:auto;gap:60px}
+.checker{width:min(100%,calc((100dvh - 165px)*.707));max-width:none;margin:auto}
+.checker>img{border-radius:15px}
+.scene-frame{margin:0;min-width:0;align-self:center}
+.scene{width:100%;max-height:none;aspect-ratio:1672/941;object-fit:contain;border-radius:20px;box-shadow:0 12px 30px #334e3912;background:transparent}
+figcaption{padding:20px 6px 0}figcaption p{font-size:clamp(16px,1.25vw,21px);line-height:1.5;margin:10px 0 0;color:#46645d}
+.eyebrow,.step-label{font-size:11px;letter-spacing:2px}
+.story{background:#fffefa;border:1px solid #e3e7dc;border-radius:22px;box-shadow:0 12px 35px #344c3710;overflow:visible;padding:22px;display:flex;flex-direction:column;min-width:0}
+.story-body{padding:0}.story h2{font-size:clamp(23px,1.9vw,31px);line-height:1.16;margin:12px 0 16px;letter-spacing:-.5px}
+.story-body>p,.question{font-size:clamp(16px,1.25vw,20px)!important;line-height:1.45;margin:10px 0 18px;font-weight:normal}
+.hint{font-size:clamp(14px,1.05vw,18px);line-height:1.5;background:#edf2e8;border-left:3px solid #8aa88b;padding:15px 16px;border-radius:3px 14px 14px 3px}
+.hint h3{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:#55735a;margin:0 0 10px}.hint p{margin:0 0 10px}
+.nav{margin-top:20px;padding-top:16px;border-top:1px solid #e5e9df;gap:8px}.nav button{padding:10px 12px;font-size:13px}
+.choice-label{font-size:13px;margin-top:14px}textarea{padding:10px;font-size:15px;min-height:60px;max-height:100px;margin-top:6px}
+.done{font-size:14px;margin-top:8px;padding:11px 15px;border-radius:10px}#celebration{font-size:14px;line-height:1.4;margin-top:8px}
+.step-list{gap:10px;margin-top:18px}.step-list button{padding:14px 18px;font-size:17px;border-radius:12px}
+.welcome{min-height:calc(100dvh - 120px);gap:30px;grid-template-columns:1fr 1fr;padding:0 5vw}.welcome h1{font-size:clamp(36px,4vw,60px)}.welcome>div>p{font-size:20px}.welcome-art{height:calc(100dvh - 150px)}
+.menu{gap:14px;margin-top:24px}.menu button{font-size:20px;padding:18px 22px}.menu b{font-size:26px}.menu small{font-size:13px}
+.cards{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}.card h2{font-size:20px;margin:16px 16px 8px}.card p{font-size:14px;margin:0 16px}
+@media(min-width:1051px) and (max-height:760px){header{height:50px}main{padding-top:10px}.topline{margin-bottom:10px}.checker{width:min(100%,calc((100dvh - 145px)*.707))}.story{padding:16px}.story h2{font-size:23px;margin:8px 0 10px}.story-body>p,.question{font-size:16px!important;margin:8px 0 12px}.hint{font-size:14px;padding:12px}.hint p{margin-bottom:7px}.hint h3{margin-bottom:7px}.nav{margin-top:12px;padding-top:12px}.choice-label{margin-top:10px}textarea{min-height:48px;height:48px}.done{padding:9px 12px}.scene-frame figcaption{padding-top:14px}}
+@media(max-width:1050px){.lesson.with-example{grid-template-columns:minmax(0,.7fr) minmax(0,1fr);align-items:start}.with-example .checker{grid-row:1/3;align-self:start}.with-example .story{grid-column:2}.lesson{gap:22px}.scene-frame figcaption{padding-top:12px}figcaption p{font-size:16px}.cards{grid-template-columns:repeat(3,1fr)}.story h2{font-size:25px}.lesson.steps-only{gap:30px}}
+@media(max-width:650px){header{padding:0 14px}.brand{font-size:17px}main{padding:14px}.topline{flex-wrap:wrap;gap:10px}.topline h1{font-size:23px;order:3;width:100%}.lesson.with-example,.lesson.steps-only{grid-template-columns:1fr;gap:24px}.with-example .checker{grid-row:auto;max-width:290px;width:100%}.with-example .story{grid-column:auto}.steps-only .checker{max-width:290px;width:100%}.cards{grid-template-columns:1fr 1fr;gap:12px}.card h2{font-size:18px}.welcome{grid-template-columns:1fr;padding:10px}.welcome-art{height:55vh}.welcome>div>p{font-size:18px}#fullscreen{font-size:12px;padding:10px}.story{padding:20px}}
